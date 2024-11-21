@@ -167,7 +167,7 @@ for cluster in pca_cluster_analysis.index:
     print(f"- Кластер {cluster}:")
     if pca_cluster_analysis.loc[cluster, 'Spending Score (1-100)'] > 75:
         print("  Рекомендація: створити програми лояльності преміум-класу для клієнтів цього кластеру.")
-    elif pca_cluster_analysis.loc[cluster, 'Annual Income (k$)'] < 40:
+    elif pca_cluster_analysis.loc[cluster, 'Annual Income (k$)'] < 50:
         print("  Рекомендація: пропонувати акції та знижки для залучення клієнтів із нижчою купівельною спроможністю.")
     else:
         print("  Рекомендація: спеціальні пропозиції для утримання клієнтів із середнім рівнем витрат.")
